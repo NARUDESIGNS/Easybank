@@ -17,19 +17,30 @@
 body {
     /* font-size: 18px; */
     font-family: 'Public Sans', sans-serif;
+    background-color: var(--very-light-gray)
 }
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: var(--white);
+    height: 4em;
 }
 .nav ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
-    padding: 25px 0;
     border: 1px solid blue;
-    width: 20em;
+    width: 25em;
+    color: var(--grayish-blue);
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 400;
+}
+.nav ul li {
+    cursor: pointer;
+    padding: 20px 0;
+    border-bottom-width: 3px;border-bottom: 3px solid var(--lime-green);
+}
+.nav ul li:hover {
+    /*  */
 }
