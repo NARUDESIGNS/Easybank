@@ -8,6 +8,7 @@
     --dark-blue: hsl(233, 26%, 24%);
     --lime-green: hsl(136, 65%, 51%);
     --bright-cyan: hsl(192, 70%, 51%);
+    --gradient: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
 
     --grayish-blue: hsl(233, 8%, 62%);
     --light-grayish-blue: hsl(220, 16%, 96%);
@@ -15,6 +16,7 @@
     --white: hsl(0, 0%, 100%);
 }
 body {
+    overflow-x: hidden;
     /* font-size: 18px; */
     font-family: 'Public Sans', sans-serif;
     background-color: var(--very-light-gray)
@@ -24,13 +26,13 @@ body {
     align-items: center;
     justify-content: space-around;
     background-color: var(--white);
-    height: 4em;
+    /* height: 4em; */
 }
 .nav ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 25em;
     color: var(--grayish-blue);
     font-size: 13px;
@@ -38,9 +40,60 @@ body {
 }
 .nav ul li {
     cursor: pointer;
-    padding: 20px 0;
-    border-bottom-width: 3px;border-bottom: 3px solid var(--lime-green);
+    padding: 25px 0;
+    /* border-bottom-width: 3px;border-bottom: 3px solid var(--lime-green); */
 }
 .nav ul li:hover {
+    color: var(--dark-blue);
     /* add codes here */
+}
+button {
+    width: 140px;
+    height: 37px;
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    background: var(--gradient);
+    color: var(--white);
+}
+.intro-container {
+    display: flex;
+}
+.intro-container .intro-message {
+    padding: 9em 0 0 8em;
+    width: 100em;
+    border: 1px solid yellow;
+}
+.intro-container .intro-message h1 {
+    font-size: 3rem;
+    color: var(--dark-blue);
+    font-weight: 400;
+}
+.intro-container .intro-image-container {
+    position: relative;
+    background: url(images/bg-intro-desktop.svg)  no-repeat;
+    background-size: 65em;
+    width: 150em;
+    width: 190%;
+    height: 55em;
+    margin-top: -13.5em;
+    /* overflow: hidden; */
+    z-index: -1;
+    border: 1px solid lime;
+}
+.intro-container .intro-image-container img:first-of-type {
+    width: 60em;
+    margin-top: -12em;
+}
+.intro-container .intro-image-container img:last-of-type {
+    position: absolute;
+    top: 19em;
+    left: 10em;
+    width: 40em;
+    width: 90%;
 }
