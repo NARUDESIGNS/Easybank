@@ -40,16 +40,16 @@ body {
 }
 .nav ul li {
     cursor: pointer;
-    padding: 25px 0;
+    padding: 30px 0;
+    font-weight: 700;
     /* border-bottom-width: 3px;border-bottom: 3px solid var(--lime-green); */
 }
 .nav ul li:hover {
     color: var(--dark-blue);
-    /* add codes here */
 }
 button {
     width: 140px;
-    height: 37px;
+    height: 40px;
     border: none;
     border-radius: 50px;
     -webkit-border-radius: 50px;
@@ -65,8 +65,9 @@ button {
     display: flex;
 }
 .intro-container .intro-message {
-    padding: 9em 0 0 8em;
+    padding: 9em 0 0 10%;
     width: 100em;
+    width: 120%;
     border: 1px solid yellow;
 }
 .intro-container .intro-message h1 {
@@ -74,26 +75,28 @@ button {
     color: var(--dark-blue);
     font-weight: 400;
 }
+.intro-container .intro-message p {
+    color: var(--grayish-blue);
+    font-weight: 400;
+}
 .intro-container .intro-image-container {
     position: relative;
     background: url(images/bg-intro-desktop.svg)  no-repeat;
-    background-size: 65em;
-    width: 150em;
-    width: 190%;
-    height: 55em;
-    margin-top: -13.5em;
+    background-size: 70em;
+    /* width: 150em; */
+    width: 200%;
+    height: 52em;
+    margin-top: -14.5em;
     /* overflow: hidden; */
     z-index: -1;
     border: 1px solid lime;
 }
-.intro-container .intro-image-container img:first-of-type {
-    width: 60em;
-    margin-top: -12em;
-}
 .intro-container .intro-image-container img:last-of-type {
     position: absolute;
-    top: 19em;
+    top: 20em;
+    top: 8em;
     left: 10em;
-    width: 40em;
-    width: 90%;
+    width: 43em;
+    /* width: 90%; */
+    /* display: none; */
 }
