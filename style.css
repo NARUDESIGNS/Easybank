@@ -161,6 +161,7 @@ button {
 }
 .articles section {
     width: 230px;
+    width: 100%;
     background-color: var(--white);
     /*border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
@@ -261,8 +262,6 @@ footer .btn-copyright p {
 
 
 /* --------------------------------------- MOBILE VIEW ---------------------------------------- */
-
-
 
 @media only screen and (max-width: 1000px){
     body {
@@ -456,8 +455,4 @@ footer .btn-copyright p {
     footer ul li {
         margin-top: 10px;
     }
-}
-
-@media only screen and (max-width: 900px){
-
 }
