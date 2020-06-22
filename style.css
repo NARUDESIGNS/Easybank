@@ -111,7 +111,7 @@ button {
     /* display: none; */
 }
 .features-container {
-    padding: 20% 10%;
+    padding: 10%;
     background-color: var(--light-grayish-blue);
     height: auto;
 }
